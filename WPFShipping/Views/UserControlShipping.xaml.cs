@@ -10,22 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfShippingService.ViewModels;
 
-namespace WpfShippingService
+namespace WPFShipping
 {
     /// <summary>
-    /// Interaction logic for ShippingView.xaml
+    /// Interaction logic for UserControlShipping.xaml
     /// </summary>
-    public partial class ShippingView : Window
+    public partial class UserControlShipping : UserControl
     {
-        public ShippingView(BaseViewModel bvm)
+        public UserControlShipping()
         {
-            
-
             InitializeComponent();
-            this.DataContext = bvm;
         }
     }
 }

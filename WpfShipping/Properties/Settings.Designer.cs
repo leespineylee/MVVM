@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfShipping.Properties
+namespace WPFShipping.Properties
 {
 
 

@@ -12,17 +12,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ClassLibraryFinal;
 
-namespace WpfShipping
+namespace WPFShipping
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        private IShippingService shippingservice;
         public MainWindow()
         {
+
+
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            WindowShipping window = new WindowShipping(shippingservice);
+            window.Show();
         }
     }
 }

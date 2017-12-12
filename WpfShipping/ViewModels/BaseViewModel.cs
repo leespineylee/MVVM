@@ -1,16 +1,36 @@
-﻿using ClassLibraryFinal;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibraryFinal;
+using System.ComponentModel;
 
-namespace WpfShipping.ViewModels
+namespace WPFShipping.ViewModels
 {
-    class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel
     {
-        private IShippingService _model;
+         public IShippingService shippingservice;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void RaisePropertyChangedHandler(string property)
@@ -20,5 +40,9 @@ namespace WpfShipping.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
             }
         }
+
     }
+
+
 }
+
